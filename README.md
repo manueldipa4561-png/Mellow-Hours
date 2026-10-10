@@ -35,7 +35,8 @@ Or just double-click `index.html` (fonts load from Google Fonts, so stay online 
 index.html     markup (room, pages, nav, sheet)
 css/style.css  all styling + animation
 js/main.js     loop, router, blanket transition, loader, cursor, hours, tour
-js/art.js      every illustration (SVG strings)
+js/art.js      every illustration (SVG strings) + the project stills list
+assets/img/    six project photos (1000px JPEGs, ~1.2 MB total)
 js/scene.js    the room: parallax, tips, cat, lamp, clock, idle mischief
 js/work.js     project cards, tilt, FLIP sheet, About eyes
 ```

@@ -247,7 +247,7 @@ body:not([data-page=home]) #tips{display:none}
 .pola{--tx:-50%;--rr:0deg;position:absolute;left:50%;top:0;width:max(calc(var(--u) * 1.1),78px);padding:.32rem .32rem .2rem;border-radius:6px;background:#fff;box-shadow:0 8px 18px -8px rgba(74,47,39,.65);translate:-50% 35%;scale:.5;opacity:0;transition:translate .55s var(--spring) calc(var(--i) * 70ms),rotate .55s var(--spring) calc(var(--i) * 70ms),scale .55s var(--spring) calc(var(--i) * 70ms),opacity .2s calc(var(--i) * 70ms)}
 .pola:nth-child(1){--tx:-112%;--rr:-11deg}.pola:nth-child(2){--tx:-50%;--rr:1.5deg;z-index:2}.pola:nth-child(3){--tx:12%;--rr:12deg}
 .tip.show .pola,.tip.peek .pola{opacity:1;scale:1;rotate:var(--rr);translate:var(--tx) 0}
-.pola .pa{aspect-ratio:4/5;border-radius:3px;overflow:hidden}.pola .pa svg{display:block;width:100%;height:100%}
+.pola .pa{aspect-ratio:4/5;border-radius:3px;overflow:hidden}.pola .pa img{display:block;width:100%;height:100%;object-fit:cover}
 .pola em{display:block;margin-top:.2rem;text-align:center;font:italic 700 .72rem/1.2 var(--serif);color:var(--ink)}
 
 /* ---------- work ---------- */
@@ -256,23 +256,13 @@ body:not([data-page=home]) #tips{display:none}
 .card{display:block;padding:0;border:0;background:none;text-align:left;cursor:pointer;transform:perspective(900px) rotate(var(--r)) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .35s var(--ease),translate .5s var(--spring),scale .5s var(--spring)}
 .card:hover{translate:0 -10px;scale:1.035}.card:active{scale:.98}
 .cv{position:relative;aspect-ratio:4/5;border-radius:30px;overflow:hidden;background:var(--bg);box-shadow:0 24px 36px -24px rgba(74,47,39,.65),0 0 0 3px rgba(255,255,255,.55)}
-.cv svg{display:block;width:100%;height:100%;transition:scale .8s var(--ease)}.card:hover .cv svg{scale:1.06}
+.cv img{display:block;width:100%;height:100%;object-fit:cover;transition:scale .8s var(--ease)}.card:hover .cv img{scale:1.06}
 .cv::after{content:'';position:absolute;inset:9px;border-radius:22px;border:2px dashed rgba(255,255,255,.7);pointer-events:none}
 .tag{position:absolute;right:12px;top:12px;z-index:2;padding:.42rem .78rem;border-radius:999px;background:var(--paper);color:var(--cocoa);font:800 .78rem/1 var(--sans);rotate:6deg;scale:0;transition:scale .45s var(--spring),rotate .45s var(--spring)}
 .card:hover .tag{scale:1;rotate:-5deg}
 @media (hover:none){.tag{scale:1}}
 .cap{display:flex;align-items:baseline;gap:.7rem;padding:.95rem .3rem 0}
 .cap .n{font:800 .85rem var(--sans);color:var(--terra)}.cap h3{flex:1;margin:0;font:800 clamp(1.15rem,2vw,1.7rem)/1.05 var(--serif);font-variation-settings:'SOFT' 100,'WONK' 1}.cap .y{font:700 .85rem var(--sans);opacity:.6}
-/* tiny life inside the project art */
-.p-steam{stroke-dasharray:70;animation:steam 3s ease-in-out infinite}
-.p-flame{transform-box:fill-box;transform-origin:50% 100%;animation:flame 1.3s ease-in-out infinite alternate}
-@keyframes flame{from{transform:scale(1,1) rotate(-2deg)}to{transform:scale(.93,1.07) rotate(2deg)}}
-.p-breathe{transform-box:fill-box;transform-origin:50% 50%;animation:breathe 3.6s ease-in-out infinite}
-.p-z text{animation:zfloat 2.6s ease-in-out infinite}
-@keyframes zfloat{0%,100%{translate:0 0;opacity:.35}50%{translate:6px -10px;opacity:1}}
-.p-bee{animation:bee 3s ease-in-out infinite}@keyframes bee{50%{translate:14px -12px}}
-.p-needles{transform-box:fill-box;transform-origin:50% 60%;animation:needles 4s ease-in-out infinite}@keyframes needles{50%{transform:rotate(3deg)}}
-
 /* ---------- about ---------- */
 .big{max-width:12em}
 .big mark{position:relative;display:inline-block;z-index:0;padding:0 .12em;background:none;color:inherit}
@@ -321,7 +311,7 @@ body:not([data-page=home]) #tips{display:none}
 .sh-x{position:fixed;z-index:3;right:clamp(16px,3vw,36px);top:max(16px,env(safe-area-inset-top));padding:.72rem 1.1rem;border:0;border-radius:999px;background:var(--paper);color:var(--cocoa);font:800 .95rem/1 var(--serif);cursor:pointer;box-shadow:0 12px 22px -12px rgba(0,0,0,.55);transition:scale .4s var(--spring)}.sh-x:hover{scale:1.06}
 .sh-in{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1fr);gap:clamp(24px,6vw,100px);align-items:center;min-height:100%;max-width:1500px;margin:0 auto;padding:clamp(80px,12vh,120px) clamp(20px,6vw,100px) 60px}
 .sh-art{justify-self:end;aspect-ratio:4/5;width:min(100%,calc((100dvh - 190px) * .8));border-radius:36px;overflow:hidden;box-shadow:0 44px 60px -34px rgba(40,20,10,.65),0 0 0 4px rgba(255,255,255,.4)}
-.sh-art svg,.ghost svg{display:block;width:100%;height:100%}
+.sh-art img,.ghost img{display:block;width:100%;height:100%;object-fit:cover}
 .ghost{position:fixed;z-index:45;overflow:hidden;pointer-events:none;box-shadow:0 44px 60px -34px rgba(40,20,10,.65)}
 .sh-txt>*{opacity:0;translate:0 26px;margin-top:0}
 .sh-txt>:nth-child(1){--k:0}.sh-txt>:nth-child(2){--k:1}.sh-txt>:nth-child(3){--k:2}.sh-txt>:nth-child(4){--k:3}.sh-txt>:nth-child(5){--k:4}.sh-txt>:nth-child(6){--k:5}

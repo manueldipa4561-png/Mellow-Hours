@@ -176,58 +176,14 @@
     <g class="mheart"><path d="M160 138C132 120 140 98 160 110C180 98 188 120 160 138Z" fill="#D9663F"/></g>
     <rect x="20" y="40" width="280" height="180" rx="22" fill="none" stroke="#E58A5F" stroke-width="3" stroke-dasharray="6 9" opacity=".7"/></svg>`;
 
-  /* ---------------- project artwork (400 x 500) ---------------- */
-  const T = (x, y, s, t, c, w) => `<text x="${x}" y="${y}" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-weight="${w || 800}" font-size="${s}" fill="${c}">${t}</text>`;
-  A.proj = [
-    /* 0 Tea & Tangle */ `<svg viewBox="0 0 400 500"><rect width="400" height="500" fill="#CFE0C3"/><circle cx="200" cy="262" r="168" fill="#E4EED6"/>
-      <g fill="#6E8F6A"><path d="M54 120c20-6 36 6 40 24-22 4-38-6-40-24z"/><path d="M330 90c18 4 28 20 22 36-18-4-26-18-22-36z"/><path d="M344 330c-20-4-30 10-30 26 20 2 32-10 30-26z"/><path d="M52 392c18-8 36 0 42 16-20 6-38 0-42-16z"/></g>
-      <rect x="124" y="150" width="152" height="262" rx="22" fill="#D9663F"/><rect x="124" y="150" width="30" height="262" rx="15" fill="#F09A70" opacity=".4"/>
-      <rect x="114" y="122" width="172" height="46" rx="16" fill="#B84E2B"/><rect x="124" y="132" width="152" height="8" rx="4" fill="#D9663F" opacity=".7"/>
-      <ellipse cx="200" cy="290" rx="64" ry="84" fill="#FBF1E3"/><g transform="translate(200 280)"><path d="M0 46C-30 14-28-30 0-54 28-30 30 14 0 46z" fill="#6E8F6A"/><path d="M0 46V-34" stroke="#E4EED6" stroke-width="3"/><path d="M-4 16C-22 12-30-2-28-14 -14-10-6 2-4 16zM4 8C20 4 28-8 26-20 12-16 6-4 4 8z" fill="#8FB08A"/></g>
-      ${T(200, 366, 17, 'tea &amp; tangle', '#4A2F27')}
-      <g fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".9"><path class="p-steam" d="M178 100c-10-14 10-22 0-38"/><path class="p-steam" style="animation-delay:-.8s" d="M214 96c-10-14 10-22 0-38"/></g>
-      <ellipse cx="318" cy="440" rx="58" ry="12" fill="#B8D0AA"/><path d="M280 394h76v28q0 24-38 24t-38-24z" fill="#FBF1E3"/><path d="M356 402q22 0 22 16t-22 16" fill="none" stroke="#FBF1E3" stroke-width="8" stroke-linecap="round"/><ellipse cx="318" cy="396" rx="38" ry="7" fill="#C98B5B"/></svg>`,
-    /* 1 Little Loaf */ `<svg viewBox="0 0 400 500"><rect width="400" height="500" fill="#FFD98A"/><circle cx="330" cy="90" r="70" fill="#FFE9B0"/>
-      <path d="M92 150H308L322 452H78Z" fill="#F3E2C2"/><path d="M92 150H308L304 188H96Z" fill="#E8D1A6"/><path d="M104 196h192" stroke="#D9663F" stroke-width="3" stroke-dasharray="6 8" stroke-linecap="round"/>
-      ${T(200, 236, 30, 'little loaf', '#D9663F')}
-      <path d="M62 400C42 340 84 270 200 270S358 340 338 400C344 432 322 452 284 452H116C78 452 56 432 62 400Z" fill="#D9954F"/><path d="M92 312Q200 258 308 312" fill="none" stroke="#EFB878" stroke-width="12" stroke-linecap="round"/>
-      <g stroke="#F6D9A8" stroke-width="10" stroke-linecap="round" fill="none"><path d="M128 300q22-12 32 14M186 290q22-8 32 16M244 300q20-6 30 16"/></g>
-      <g class="p-breathe"><path d="M142 380q12 12 24 0M234 380q12 12 24 0" stroke="#4A2F27" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M188 398q12 10 24 0" stroke="#4A2F27" stroke-width="4.5" fill="none" stroke-linecap="round"/>
-      <ellipse cx="124" cy="398" rx="14" ry="9" fill="#E58A8A" opacity=".55"/><ellipse cx="276" cy="398" rx="14" ry="9" fill="#E58A8A" opacity=".55"/></g>
-      <g fill="#fff" opacity=".8"><circle cx="72" cy="120" r="5"/><circle cx="110" cy="84" r="3.5"/><circle cx="320" cy="300" r="4"/><circle cx="360" cy="360" r="3"/></g></svg>`,
-    /* 2 Pillow Talk */ `<svg viewBox="0 0 400 500"><rect width="400" height="500" fill="#5B4B93"/>
-      <g fill="#FFF3C4">${[[60, 80, 3], [120, 150, 2], [350, 70, 3], [300, 160, 2], [40, 240, 2], [370, 280, 2.5], [180, 60, 2]].map(s => `<circle class="st" cx="${s[0]}" cy="${s[1]}" r="${s[2]}"/>`).join('')}</g>
-      <circle cx="104" cy="150" r="64" fill="#FFE9A8"/><circle cx="132" cy="132" r="56" fill="#5B4B93"/>
-      <rect x="206" y="96" width="140" height="282" rx="28" fill="#2E2450"/><rect x="214" y="104" width="124" height="266" rx="22" fill="#7A66BD"/><rect x="250" y="112" width="52" height="10" rx="5" fill="#2E2450"/>
-      <circle cx="276" cy="196" r="30" fill="#FFE9A8"/><circle cx="288" cy="188" r="26" fill="#7A66BD"/>
-      ${T(276, 276, 38, '10:47', '#FBF1E3', 700)}<rect x="236" y="300" width="80" height="26" rx="13" fill="#FBF1E3"/>${T(276, 319, 14, 'sleep now', '#5B4B93', 800)}
-      <path d="M30 372Q30 336 74 336H212Q256 336 256 372V430Q256 466 212 466H74Q30 466 30 430Z" fill="#FBF1E3"/><path d="M44 372Q44 350 74 350H212" fill="none" stroke="#E7D3B7" stroke-width="3" stroke-dasharray="5 7"/>
-      <g class="p-z" fill="#FFE9A8" font-family="Fraunces,serif" font-weight="800"><text x="116" y="316" font-size="34">z</text><text x="146" y="290" font-size="26" style="animation-delay:-.7s">z</text><text x="168" y="270" font-size="20" style="animation-delay:-1.4s">z</text></g></svg>`,
-    /* 3 Moss & Mug */ `<svg viewBox="0 0 400 500"><rect width="400" height="500" fill="#FFC9A8"/><circle cx="200" cy="270" r="170" fill="#FFD9BE"/>
-      <ellipse cx="200" cy="432" rx="130" ry="20" fill="#E58A5F" opacity=".5"/>
-      <path d="M104 220H296V340Q296 418 200 418Q104 418 104 340Z" fill="#FBF1E3"/><path d="M104 280H296V312H104Z" fill="#D9663F"/><path d="M104 220h18V340q0 50 40 68Q104 390 104 340Z" fill="#fff" opacity=".5"/>
-      <path d="M296 250q64 0 64 56t-64 56" fill="none" stroke="#FBF1E3" stroke-width="24" stroke-linecap="round"/>
-      <path d="M96 222Q92 178 136 188Q148 148 192 164Q224 136 256 168Q300 160 306 202Q320 226 296 232H104Z" fill="#6E8F6A"/><g fill="#8FB08A"><circle cx="150" cy="196" r="12"/><circle cx="214" cy="180" r="14"/><circle cx="268" cy="200" r="11"/></g>
-      <g><rect x="150" y="136" width="9" height="34" rx="4" fill="#FBF1E3"/><path d="M134 140Q154 100 176 140Z" fill="#D9663F"/><circle cx="148" cy="130" r="4" fill="#fff"/><circle cx="162" cy="126" r="3" fill="#fff"/></g>
-      <g><rect x="244" y="150" width="7" height="24" rx="3.5" fill="#FBF1E3"/><path d="M232 154Q248 124 266 154Z" fill="#D9663F"/><circle cx="244" cy="146" r="3" fill="#fff"/><circle cx="256" cy="144" r="2.5" fill="#fff"/></g>
-      <g fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".85"><path class="p-steam" d="M196 112c-10-14 10-22 0-38"/></g>
-      ${T(200, 372, 24, 'moss &amp; mug', '#4A2F27')}</svg>`,
-    /* 4 Honey Hush */ `<svg viewBox="0 0 400 500"><rect width="400" height="500" fill="#3B2A52"/>
-      <circle cx="200" cy="230" r="190" fill="#FFB347" opacity=".13"/><circle cx="200" cy="230" r="130" fill="#FFB347" opacity=".16"/><circle cx="200" cy="230" r="76" fill="#FFD36B" opacity=".2"/>
-      <g class="p-flame"><path d="M200 112C172 156 178 196 200 212 222 196 228 156 200 112Z" fill="#FFB347"/><path d="M200 146C188 172 190 192 200 202 210 192 212 172 200 146Z" fill="#FFF3C4"/></g>
-      <path d="M200 212v26" stroke="#2E2038" stroke-width="5" stroke-linecap="round"/>
-      <rect x="112" y="236" width="176" height="190" rx="30" fill="#F3B94F"/><rect x="112" y="236" width="34" height="190" rx="17" fill="#FFD98A" opacity=".6"/><rect x="106" y="226" width="188" height="24" rx="12" fill="#E8A53A"/>
-      <rect x="132" y="296" width="136" height="96" rx="16" fill="#FBF1E3"/>
-      <g fill="none" stroke="#F3B94F" stroke-width="2.4">${[[160, 316], [184, 316], [208, 316], [172, 336], [196, 336]].map(p => `<path transform="translate(${p[0]} ${p[1]})" d="M0-10l9 5v10l-9 5-9-5v-10z"/>`).join('')}</g>
-      ${T(200, 378, 19, 'honey hush', '#3B2A52')}
-      <g class="p-bee"><ellipse cx="82" cy="136" rx="14" ry="10" fill="#FFD36B"/><path d="M76 128v16M84 127v18" stroke="#3B2A52" stroke-width="4"/><ellipse cx="80" cy="124" rx="9" ry="6" fill="#fff" opacity=".7"/></g>
-      <g class="p-bee" style="animation-delay:-1.3s"><ellipse cx="324" cy="360" rx="11" ry="8" fill="#FFD36B"/><path d="M319 354v12M326 353v14" stroke="#3B2A52" stroke-width="3.4"/><ellipse cx="322" cy="346" rx="7" ry="5" fill="#fff" opacity=".7"/></g></svg>`,
-    /* 5 Soft Launch */ `<svg viewBox="0 0 400 500"><rect width="400" height="500" fill="#F4B8C5"/><circle cx="200" cy="250" r="176" fill="#F8CBD5"/>
-      <path d="M298 346C352 396 288 420 336 468" fill="none" stroke="#D9663F" stroke-width="9" stroke-linecap="round"/>
-      <circle cx="196" cy="262" r="108" fill="#D9663F"/>
-      <g fill="none" stroke-linecap="round" stroke-width="9"><path d="M104 226Q196 182 288 236" stroke="#EE9066"/><path d="M92 270Q196 230 300 282" stroke="#F4B49A"/><path d="M104 314Q196 274 288 326" stroke="#EE9066"/><path d="M150 168Q122 262 166 360" stroke="#F4B49A" opacity=".8"/><path d="M226 160Q262 262 214 362" stroke="#C95A34" opacity=".8"/></g>
-      <g class="p-needles"><line x1="86" y1="440" x2="312" y2="96" stroke="#FBF1E3" stroke-width="11" stroke-linecap="round"/><circle cx="312" cy="96" r="14" fill="#FFD98A"/><line x1="322" y1="446" x2="90" y2="112" stroke="#FBF1E3" stroke-width="11" stroke-linecap="round"/><circle cx="90" cy="112" r="14" fill="#A9C3A1"/></g>
-      <rect x="40" y="378" width="108" height="86" rx="14" fill="#FBF1E3"/><path d="M52 402h84M52 422h84M52 442h84" stroke="#F4B8C5" stroke-width="8" stroke-linecap="round" stroke-dasharray="14 8"/>
-      ${T(200, 58, 24, 'soft launch', '#4A2F27')}</svg>`
-  ].map(s => s.replace('<svg ', '<svg preserveAspectRatio="xMidYMid slice" aria-hidden="true" '));
+  /* ---------------- project stills (generated photos in assets/img) ---------------- */
+  const STILLS = [
+    ['tea-tangle', 'A terracotta tea tin with a leaf label beside a steaming cup'],
+    ['little-loaf', 'A paper bag printed little loaf next to a floured sourdough'],
+    ['pillow-talk', 'A phone showing a sleep app, resting on a cream pillow'],
+    ['moss-mug', 'A mug with a tiny moss garden and mushrooms growing on top'],
+    ['honey-hush', 'A lit amber candle jar labelled honey hush'],
+    ['soft-launch', 'A ball of terracotta yarn with knitting needles and a knitted swatch']
+  ];
+  A.proj = STILLS.map(s => `<img src="assets/img/${s[0]}.jpg" alt="${s[1]}" decoding="async" draggable="false">`);
 })();
