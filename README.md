@@ -1,7 +1,7 @@
 # Mellow Hours
 
 A fictional studio that makes *soft things for slow brands* — a concept site by **Punto Due Studio**.
-Plain static files: no build step, no dependencies, every illustration is inline SVG drawn in `js/art.js`.
+Plain static files: no build step, no dependencies. The room and every character are inline SVG drawn in `js/art.js`; the six project stills in `assets/img/` are AI-generated product photos (Higgsfield).
 
 ## Run it
 
